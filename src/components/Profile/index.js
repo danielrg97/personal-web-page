@@ -14,7 +14,7 @@ const ProfileComponent = () => {
                 <Divider/>
                 <Container fluid>
                     <blockquote>
-                    <p>"trabajo va a llenar gran parte de tu vida, la única manera de estar realmente satisfecho es hacer lo que creas que es un gran trabajo y la única manera de hacerlo es amar lo que haces."</p>
+                    <p>"Tu trabajo va a llenar gran parte de tu vida, la única manera de estar realmente satisfecho es hacer lo que creas que es un gran trabajo y la única manera de hacerlo es amar lo que haces."</p>
                     <footer>- Steve Jobs</footer>
                     </blockquote>
                 </Container>
