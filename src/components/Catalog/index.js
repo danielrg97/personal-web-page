@@ -11,7 +11,7 @@ const CatalogComponent = () => {
             <Divider/>
             <Container fluid>
                 <Header as='h3'>Habilidades técnicas</Header>
-                <p>A continuación pondré una estimación personal de mis habilidades técnicas</p>
+                <p>A continuación se encontrará una estimación personal de mis conocimientos técnicos</p>
             <div className="contactCards">
                 <Card id="card">
                     <Card.Content>

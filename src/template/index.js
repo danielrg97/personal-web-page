@@ -5,6 +5,7 @@ import ContactComponent from '../components/Contact';
 import ProfileComponent from '../components/Profile';
 import CatalogComponent from '../components/Catalog';
 import { Icon } from "semantic-ui-react";
+import { version } from './../../package.json';
 
 const Template = () => {
     return(
@@ -21,6 +22,8 @@ const Template = () => {
                         Esta página es elaborada<br/> únicamente con React.js <br/>
                         por Daniel Rodriguez. <br/>
                         <Icon size="big" name="github"/><a href="https://github.com/danielrg97/personal-web-page">Ver codigo fuente</a>
+                        <br/>
+                        <span style={{color: "lightgrey", fontSize: "8"}}>Version {version}</span>
                     </p>
                 </div>
                 <div className="fragment">
