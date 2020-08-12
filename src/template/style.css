@@ -22,9 +22,7 @@ a{
      box-shadow: 10px 0px 21px -13px rgba(0,0,0,0.75);
 }
 #itemMenu{
-    /*background-color: seagreen;*/
     padding: 2.5em 4em 2.5em 5em;
-    /*margin-left: 25px;*/
 }
 :hover#itemMenu{
     background-color: #eeeed1;
@@ -71,22 +69,25 @@ a{
     }
 }
 @media(max-width: 687px){
+    .title{
+        display: block;
+        width: 150px;
+    }
     .lateralMenu{
         height: 125px;
+    }
+    .mainCont{
+        margin: 0 10px 0 10px ;
+    }
+    ul{
+        right: 0px;
     }
     li{
         float: none;
     }
 }
 @media(max-width: 375px){
-    .title{
-        display: none;
-    }
     #itemMenu{
         margin-left: 50px;
     }
-    .mainCont{
-        margin: 0 10px 0 10px ;
-    }
-    
 }

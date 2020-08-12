@@ -27,6 +27,7 @@ const Template = () => {
                     <Route exact path="/" component={ProfileComponent} />
                     <Route path="/contact" component={ContactComponent} />  
                     <Route path="/catalog" component={CatalogComponent} />  
+                    <h2 style={{textAlign:"center", padding: "1.5em", color:"lightgrey"}}><Icon name="angle down"/>Aquí termina esta sección<Icon name="angle down"/></h2>
                 </div>
             </div>
         </Router>
