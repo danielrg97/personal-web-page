@@ -42,9 +42,6 @@ const Template = () => {
                             <li id="itemMenu"><h3><Icon size="large" name="address book"/><br/><Link to="/contact"> Contacto</Link></h3></li>
                         </ul>
                         <Link class="onlyAdmin">Admin Dashboard</Link>{/** TODO: usuario en sesion debe verse aqui*/}   
-                    {/*
-                        
-                        */}
                     </header>
                 </div> 
                 <div className="fragment">
