@@ -15,7 +15,7 @@ const ContactComponent = () => {
                         Dato de contacto
                     </Card.Meta>
                     <Card.Description>
-                    <Icon name='phone'/><tel>(+57) 311 3478769</tel>
+                    <Icon name='phone'/>(+57) 311 3478769
                     </Card.Description>
                     </Card.Content>
                 </Card>

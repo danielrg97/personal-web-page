@@ -74,20 +74,26 @@ a:visited {
         background-color: #7777;
     }
 }
+.divider.text{
+    padding-right: 10px;
+}
 /*Para pantallas pequeñas se quita el menu superior y se reemplaza por un 'Hamburguer Menu'*/
 @media(max-width: 767px){
-    .lateralMenu .onlyAdmin{
+    /*.lateralMenu .onlyAdmin{
         display: none;
-    }
+    }*/
     .toggleMenuShow{
         list-style: none;
         opacity:1;
         transition: 1s;
-        background-color: #7777;
-        height: 60vh;
+        background-color: #b2b2b2;
+        height: 80vh;
         border-radius: 10px 10px 10px 10px;
         margin: 10px;
         padding: 10px;
+    }
+    .toggleMenuShow .logLinks{
+        text-align: left !important;
     }
     .toggleMenuHide{
         opacity:0;

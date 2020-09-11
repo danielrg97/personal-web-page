@@ -1,0 +1,58 @@
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    clear: both;
+}
+.login-container h1{
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.6s;
+    color: white;
+}
+.login-container p{
+    color: white;
+    margin: 0.5em 0 !important;
+}
+.login-container .form{
+    width: 30rem;
+    height: 30rem;
+    margin: 20px auto;
+    background-color: #08ad8c;
+    padding: 2em;
+    box-shadow: 0px 0px 25px -10px #474647;
+}
+.login-container .form-fields{
+    padding: 1em 0;
+}
+.login-container .form-fields input{
+    width: 100%;
+    padding: 1em;
+    margin: 0.5em 0;
+    font-weight: 500;
+    text-align: center;
+    transition: 0.6s;
+}
+.login-container .form-buttons{
+    align-content: center;
+    text-align: center;
+    }
+.login-container .form-buttons button{
+    width: 100%;
+}
+.login-container .form-buttons a:link {
+    color: white;;
+}
+.login-container .form-buttons a:visited {
+    color: white;
+}
+.login-container .form-buttons a{
+    margin: 0.5em 0 !important;
+}
+.ui.basic.red.label{
+    position: absolute !important;
+    z-index: 10;
+}
