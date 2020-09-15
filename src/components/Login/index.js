@@ -5,6 +5,9 @@ import { Button, Dimmer, Loader } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {loginAction} from './actions';
+import { toast } from 'react-toastify';
+import { toastProperties } from '../../utils/utils';
+
 
 const LoginComponent = ({history}) =>{
 
@@ -17,9 +20,8 @@ const LoginComponent = ({history}) =>{
     }
     const validate = _ => {
         if(error !== false && typeof error !== 'undefined'){
-            alert(error)
+            toast.warn(error.response.data.message, toastProperties);
         }else if(error === false && localStorage.getItem("Authorization")){
-            console.log(localStorage.getItem("UserInSession"));
             history.push("/index")
         }
     }

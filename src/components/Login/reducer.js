@@ -10,7 +10,7 @@ export default function(state = initialState, action){
         case LOG_IN:
             return {error: undefined, loading: true}
         case CLEAN_REDUCER:
-            return {error:undefined, loading: undefined, token: undefined, creationDate: undefined}
+            return {}
         default:
             return state;
     }

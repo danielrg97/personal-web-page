@@ -1,4 +1,4 @@
-import { REGISTER_SUCCESS, REGISTER_ERROR, REGISTER } from "../../resources/typesOfActions";
+import { REGISTER_SUCCESS, REGISTER_ERROR, REGISTER, CLEAN_REDUCER } from "../../resources/typesOfActions";
 
 const initialState = {};
 export default function(state = initialState, action){
@@ -9,6 +9,8 @@ export default function(state = initialState, action){
             return {error: action.result, loading: false};
         case REGISTER:
             return {error: undefined, loading: true}
+        case CLEAN_REDUCER:
+            return {}
         default:
             return state;
     }

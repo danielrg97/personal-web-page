@@ -3,9 +3,11 @@ import { Button, Dimmer, Loader } from 'semantic-ui-react';
 import FormRegister from './form';
 import './style.css';
 import { Link } from 'react-router-dom';
-import { validateIfHasToken } from '../../utils/utils';
+import { toastProperties, validateIfHasToken } from '../../utils/utils';
 import { useDispatch, useSelector } from 'react-redux';
 import { registerUser } from './actions';
+import { cleanReducer } from './../Login/actions'
+import { toast } from 'react-toastify';
 
 const RegisterComponent = ({history}) =>{
     const dispatch = useDispatch();
@@ -15,8 +17,9 @@ const RegisterComponent = ({history}) =>{
     }
     const validate = _ => {
         if(error !== false && typeof error !== 'undefined'){
-            alert(error)
+            toast.warn(error.response.data.message, toastProperties);
         }else if(error === false){
+            dispatch(cleanReducer());
             history.push("/login")
         }
     }

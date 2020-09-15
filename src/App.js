@@ -6,18 +6,32 @@ import LoginComponent from './components/Login';
 import RegisterComponent from './components/Register';
 import { Provider } from 'react-redux';
 import store from './store';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
     <div className="App"> 
       <Provider store={store}>
         <Router>
-            <Route path="/">
-              <Redirect to="/index"/>
-            </Route>
-            <Route path="/login" component={LoginComponent}/>
-            <Route path="/index" component={Template}/>
-            <Route path="/register" component={RegisterComponent}/>
+            <div>
+              <Route path="/">
+                <Redirect to="/index"/>
+              </Route>
+              <Route path="/login" component={LoginComponent}/>
+              <Route path="/index" component={Template}/>
+              <Route path="/register" component={RegisterComponent}/>
+              <ToastContainer
+                  position="top-right"
+                  autoClose={5000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                />
+            </div>
         </Router>
       </Provider>
       {/**<Template/>**/}
